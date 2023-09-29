@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV700&family=Inter:wght@100;200;300;4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV600;700;800&family=Playfair+Display:wght@4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZVSen:wght@4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV");
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV700&family=Inter:wght@100;200;300;4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV600;700;800&family=Playfair+Display:wght@4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZVSen:wght@4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 :root {
   --color-primary: #ffff;
@@ -8,24 +9,33 @@
   /* --text-accent: hsl(195, 2%, 78%); */
   /* --accent-blue: hsl(205, 100%, 48%); */
 
-  --fs-14: 14px;
-  --fs-16: 16px;
-  --fs-18: 18px;
-  --fs-20: 20px;
-  --fs-22: 22px;
-  --fs-25: 25px;
-  --fs-28: 28px;
-  --fs-30: 30px;
-  --fs-35: 35px;
-  --fs-39: 39px;
-  --fs-49: 49px;
-  --fs-70: 70px;
+    --color-primary: #ffff;
+    --color-black: #040404;
+    --gradient-color: linear-gradient(180deg, #FED710 0%, #FF5001 100%);
+    /* --text-accent: hsl(195, 2%, 78%); */
+    /* --accent-blue: hsl(205, 100%, 48%); */
 
-  --fw-300: 300;
-  --fw-400: 400;
-  --fw-500: 500;
-  --fw-700: 700;
+    --fs-14: 14px;
+    --fs-16: 16px;
+    --fs-18: 18px;
+    --fs-20: 14px;
+    --fs-22: 10px;
+    --fs-25: 25px;
+    --fs-28: 28px;
+    --fs-30: 30px;
+    --fs-35: 35px;
+    --fs-39: 39px;
+    --fs-49: 49px;
+    --fs-70: 26px;
+
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+
 }
+
 @font-face {
   font-family: "agnostic";
   src: url(/assets/font/agnostic/Agnostic.ttf);
@@ -33,12 +43,13 @@
 .ff-agnostic {
   font-family: "Agnostic" !important;
 }
+
 .ff-robata {
   font-family: "Roboto", sans-serif;
 }
 
 .ff-popins {
-  font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .color-black {
@@ -53,6 +64,7 @@
 .black-color {
   color: var(--color-black);
 }
+
 .fs-16 {
   font-size: var(--fs-16);
 }
@@ -112,7 +124,107 @@
 .fw-500 {
   font-weight: var(--fw-500);
 }
+.fw-600 {
+    font-weight: var(--fw-600);
+}
 
 .fw-700 {
-  font-weight: var(--fw-700);
+    font-weight: var(--fw-700);
+}
+
+.w-82 {
+    width: 92%;
+}
+
+.py-7 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+@media (min-width:567px) {
+    :root {
+        --fs-14: 14px;
+        --fs-16: 16px;
+        --fs-18: 18px;
+        --fs-20: 20px;
+        --fs-22: 22px;
+        --fs-25: 25px;
+        --fs-28: 28px;
+        --fs-30: 30px;
+        --fs-35: 35px;
+        --fs-39: 39px;
+        --fs-49: 49px;
+        --fs-70: 70px;
+    }
+}
+
+@media (min-width:768px) {
+    :root {
+        --fs-14: 14px;
+        --fs-16: 16px;
+        --fs-18: 18px;
+        --fs-20: 14px;
+        --fs-22: 16px;
+        --fs-25: 25px;
+        --fs-28: 28px;
+        --fs-30: 30px;
+        --fs-35: 35px;
+        --fs-39: 39px;
+        --fs-49: 49px;
+        --fs-70: 48px;
+    }
+    .w-82{
+        width: 92%;
+    }
+}
+
+@media (min-width:992px) {
+    :root {
+        --fs-14: 14px;
+        --fs-16: 16px;
+        --fs-18: 16px;
+        --fs-20: 18px;
+        --fs-22: 22px;
+        --fs-25: 25px;
+        --fs-28: 28px;
+        --fs-30: 30px;
+        --fs-35: 35px;
+        --fs-39: 39px;
+        --fs-49: 49px;
+        --fs-70: 70px;
+    }
+    .w-82{
+        width: 95%;
+    }
+}
+
+@media (min-width:1024px) {
+    
+}
+
+@media (min-width:1200px) {
+    :root {
+        --fs-14: 14px;
+        --fs-16: 16px;
+        --fs-18: 18px;
+        --fs-20: 20px;
+        --fs-22: 22px;
+        --fs-25: 25px;
+        --fs-28: 28px;
+        --fs-30: 30px;
+        --fs-35: 35px;
+        --fs-39: 39px;
+        --fs-49: 49px;
+        --fs-70: 70px;
+    }
+
+    .w-82 {
+        width: 82%;
+    }
+}
+
+@media (min-width:1400px) {
+    .w-82 {
+        width: 72%;
+    }
 }
