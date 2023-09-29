@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none !important;
+    text-decoration: none !important;
+}
+.btn-hover{
+    
+}
+.btn-1{
+    padding: 14px 19px 13px 20px;
+    border: none;
+    border-radius: 100px;
+    box-shadow: linear-gradient(180deg, #FED710 0%, #FF5001 100%);
+}
+
+.nav-links:focus-within {
+}
+
+.nav-links:hover:not(:focus) {
+    border-bottom: 2px solid white;
+}
+
+.nav-bar:hover .nav-links:not(:focus, :hover) {
+    color: var(--text-accent);
+}
