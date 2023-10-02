@@ -9,17 +9,17 @@
     /* --accent-blue: hsl(205, 100%, 48%); */
 
     --fs-14: 14px;
-    --fs-16: 16px;
-    --fs-18: 18px;
+    --fs-16: 9px;
+    --fs-18: 12px;
     --fs-20: 14px;
-    --fs-22: 10px;
+    --fs-22: 12px;
     --fs-25: 25px;
     --fs-28: 28px;
     --fs-30: 30px;
     --fs-35: 35px;
-    --fs-39: 39px;
-    --fs-49: 49px;
-    --fs-70: 26px;
+    --fs-39: 20px;
+    --fs-49: 32px;
+    --fs-70: 46px;
 
     --fw-300: 300;
     --fw-400: 400;
@@ -134,20 +134,20 @@
 }
 
 .py-7 {
-    padding-top: 5rem;
+    padding-top: 0rem;
     padding-bottom: 5rem;
 }
 
-@media (min-width:567px) {
+@media (min-width:576px) {
     :root {
         --fs-14: 14px;
         --fs-16: 16px;
         --fs-18: 18px;
-        --fs-20: 20px;
+        --fs-20: 12px;
         --fs-22: 22px;
         --fs-25: 25px;
         --fs-28: 28px;
-        --fs-30: 30px;
+        --fs-30: 22px;
         --fs-35: 35px;
         --fs-39: 39px;
         --fs-49: 49px;
@@ -161,26 +161,6 @@
         --fs-16: 16px;
         --fs-18: 18px;
         --fs-20: 14px;
-        --fs-22: 16px;
-        --fs-25: 25px;
-        --fs-28: 28px;
-        --fs-30: 30px;
-        --fs-35: 35px;
-        --fs-39: 39px;
-        --fs-49: 49px;
-        --fs-70: 48px;
-    }
-    .w-82{
-        width: 92%;
-    }
-}
-
-@media (min-width:992px) {
-    :root {
-        --fs-14: 14px;
-        --fs-16: 16px;
-        --fs-18: 16px;
-        --fs-20: 18px;
         --fs-22: 22px;
         --fs-25: 25px;
         --fs-28: 28px;
@@ -189,6 +169,31 @@
         --fs-39: 39px;
         --fs-49: 49px;
         --fs-70: 70px;
+    }
+    .w-82{
+        width: 92%;
+    }
+    .py-7 {
+        padding-top: 0rem;
+        padding-bottom: 9rem;
+    }
+
+}
+
+@media (min-width:992px) {
+    :root {
+        --fs-14: 14px;
+        --fs-16: 16px;
+        --fs-18: 14px;
+        --fs-20: 16px;
+        --fs-22: 24px;
+        --fs-25: 25px;
+        --fs-28: 28px;
+        --fs-30: 30px;
+        --fs-35: 35px;
+        --fs-39: 39px;
+        --fs-49: 49px;
+        --fs-70: 92px;
     }
     .w-82{
         width: 95%;
@@ -223,5 +228,9 @@
 @media (min-width:1400px) {
     .w-82 {
         width: 72%;
+    }
+    .py-7 {
+        padding-top: 9rem;
+        padding-bottom: 15rem;
     }
 }

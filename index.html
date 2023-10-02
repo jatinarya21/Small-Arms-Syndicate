@@ -10,8 +10,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
-<body>
-    <header class="min-vh-100 d-flex flex-column">
+
+<body class="">
+    <header class="min-h-100 d-flex flex-column">
         <section class="bg-black">
             <!-- Nav-Bar -->
             <nav class="container d-flex align-items-center justify-content-between">
@@ -29,20 +30,25 @@
                     </li>
                     <li><a class="ff-agnostic me-4 white-color fs-18 fw-400 text-uppercase nav-links" href="">Stash</a>
                     </li>
-                    <li><a class="ff-agnostic me-4 white-color fs-18 fw-400 text-uppercase nav-links" href="">Syndicate
+                    <li><a class="ff-agnostic me-4 white-color fs-18 fw-400 text-uppercase nav-links " href="">Syndicate
                             Game</a></li>
+                            <button class="ff-agnostic gradient-color btn-1 white-color fs-20  fw-400 d-lg-none">connect wallet</button>
                 </ul>
-                <div class="container-one">
-                    <button class="ff-agnostic gradient-color btn-1 white-color fs-20 fw-400">connect wallet</button>
-                </div>
-                <button onclick="openNav()" class="z-1 d-lg-none">open</button>
+                    <button class="ff-agnostic gradient-color btn-1 white-color fs-20 fw-400 d-none d-lg-block btn-hover">connect wallet</button>
+
+                    <button onclick="openNav()" class="z-1 menu-button d-lg-none">
+                        <span id="menu-line1"></span>
+                        <span id="menu-line2"></span>
+                        <span id="menu-line3"></span>
+                    </button>
             </nav>
         </section>
         <!-- Hero-Section -->
         <section class="bg-hero d-flex flex-grow-1">
-            <div class="container position-relative">
-                <div class="d-flex flex-column align-items-center py-7">
-                    <h2 class="fs-70 ff-agnostic white-color ">Small Arms Syndicate</h2>
+            <div class="container position-relative d-flex">
+                <div
+                    class="d-flex flex-column align-items-center justify-content-center  justify-content-xl-start py-7">
+                    <h2 class="fs-70 ff-agnostic white-color text-center ">Small Arms Syndicate</h2>
                     <p class="ff-robata fs-22 white-color w-82 text-center">Small Arms Syndicate is a collection of
                         10,000
                         unique T-rex Small Arms NFTs— unique digital
@@ -51,21 +57,21 @@
                         perks and is your utility token in the S.A.S ecosystem.</p>
                 </div>
                 <img class="cartoon-1 " src="./assets/images/png/cartoon-1.png" alt="">
-                <img class="cartoon-2" src="./assets/images/png/cartoon-2.png" alt="">
-                <img class="cartoon-3" src="./assets/images/png/cartoon-3.png" alt="">
+                <img class="cartoon-2 d-none d-md-block" src="./assets/images/png/cartoon-2.png" alt="">
+                <img class="cartoon-3 d-none d-md-block" src="./assets/images/png/cartoon-3.png" alt="">
                 <img class="cartoon-4" src="./assets/images/png/cartoon-4.png" alt="">
             </div>
         </section>
     </header>
     <!-- section-3 -->
-    <section class="bg-black py-5">
+    <section class="bg-black  py-3  py-lg-5">
         <div class="container">
-            <div class="row py-5 my-5 justify-content-between align-items-center">
-                <div class="col-5">
-                    <img width="100%" src="./assets/images/png/sec-2gif.gif" alt="">
+            <div class="row py-3 py-lg-5 my-lg-5 justify-content-between align-items-center">
+                <div class="col-lg-5 d-flex justify-content-center">
+                    <img width="100%" class="gifimg" src="./assets/images/png/sec-2gif.gif" alt="">
                 </div>
-                <div class="col-6">
-                    <h2 class="fs-39 white-color ff-agnostic fw-400 ">Welcome to <br>
+                <div class="col-lg-6 pt-2">
+                    <h2 class="fs-39 white-color ff-agnostic fw-400">Welcome to <br>
                         <span class="text-gradient fs-49 ">Small Arms Syndicate</span></h2>
                     <p class="white-color ff-popins fs-18 fw-400 pe-2 pt-1 pb-3">Mauris, ipsum auctor at aenean.
                         Ultrices netus
@@ -82,14 +88,16 @@
         </div>
     </section>
     <!-- section Rarity -->
-    <section class="bg-black">
+    <section class="bg-black position-relative">
+        <!-- <div class="circle-rarity"></div> -->
         <div class="container">
-                <h2 class="white-color fs-49 ff-agnostic fw-400 text-uppercase text-center">Rarity</h2>
-                <!-- nav-tabs -->
-            <div class="py-5">
-                <ul class="nav nav-pills mb-3 d-flex align-items-center justify-content-center gap-3" id="pills-tab" role="tablist">
+            <h2 class="white-color fs-49 ff-agnostic fw-400 text-uppercase text-center">Rarity</h2>
+            <!-- nav-tabs -->
+            <div class="py-5 d-flex overflow-x-auto white-space justify-content-center ">
+                <ul class=" nav nav-pills mb-3 d-flex align-items-center justify-content-center gap-3"
+                    id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                        <button class="nav-link active d-inline-block" id="pills-home-tab" data-bs-toggle="pill"
                             data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
                             aria-selected="true">Background</button>
                     </li>
@@ -105,51 +113,251 @@
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                            data-bs-target="#pills-mouths" type="button" role="tab" aria-controls="pills-mouths"
                             aria-selected="false">Mouths</button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                            data-bs-target="#pills-skins" type="button" role="tab" aria-controls="pills-skins"
                             aria-selected="false">Skins</button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                            data-bs-target="#pills-head" type="button" role="tab" aria-controls="pills-head"
                             aria-selected="false">Head</button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                            data-bs-target="#pills-eyes" type="button" role="tab" aria-controls="pills-eyes"
                             aria-selected="false">Eyes</button>
                     </li>
-                    
+
                 </ul>
                 <div class="tab-content" id="pills-tabContent">
-                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
-                        tabindex="0">...</div>
+                    <div class="tab-pane fade show" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                        tabindex="0">
+                        <!--  -->
+                    </div>
                     <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
-                        tabindex="0">...</div>
-                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
-                        tabindex="0">...</div>
-                </div>
-            </div>
-            <!-- images -->
-            <div class="row">
-                <div class="col-4">
-                    <div class="card-main">
-                        <div class="rarity-smcard">
-                            <img width="100%" src="./assets/images/png/rarity-img1.png" alt="">
+                        tabindex="0">
+                        <div class="col-md-6 col-lg-4 pt-4">
+                            <div class="card-main">
+                                <img width="100%" src="./assets/images/png/rarity-img2.png" alt="">
+                                <p class="white-color ff-popins fs-20 fw-500 text-uppercase pt-3">Background (Light
+                                    Green)
+                                </p>
+                                <div class="d-flex  justify-content-between align-items-center">
+                                    <p class="white-color fs-30 ff-popins fw-600">Rarity:<br><span
+                                            class="text-gradient">11.88%</span></p>
+                                    <button class="btn-3 ff-agnostic fs-20 fw-400 text-uppercase">Buy Now</button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="rarity-smcard">
-                            <p class="white-color ff-popins fs-20 fw-500 text-uppercase">Background (Light Green)</p>
-                            <p class="white-color fs-30 ff-popins fw-600">Rarity:<br><span class="text-gradient">11.88%</span></p>
+                    </div>
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+                        tabindex="0">
+                        <div class="col-md-6 col-lg-4 pt-4">
+                            <div class="card-main">
+                                <img width="100%" src="./assets/images/png/rarity-img3.png" alt="">
+                                <p class="white-color ff-popins fs-20 fw-500 text-uppercase pt-3">Background (Light
+                                    Green)</p>
+                                <div class="d-flex  justify-content-between align-items-center">
+                                    <p class="white-color fs-30 ff-popins fw-600">Rarity:<br><span
+                                            class="text-gradient">11.88%</span></p>
+                                    <button class="btn-3 ff-agnostic fs-20 fw-400 text-uppercase">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-mouths" role="tabpanel" aria-labelledby="pills-contact-tab"
+                        tabindex="0">
+                        <div class="col-md-6 col-lg-4 pt-4">
+                            <div class="card-main">
+                                <img width="100%" src="./assets/images/png/rarity-img4.png" alt="">
+                                <p class="white-color ff-popins fs-20 fw-500 text-uppercase pt-3">Background (Light
+                                    Green)</p>
+                                <div class="d-flex  justify-content-between align-items-center">
+                                    <p class="white-color fs-30 ff-popins fw-600">Rarity:<br><span
+                                            class="text-gradient">11.88%</span></p>
+                                    <button class="btn-3 ff-agnostic fs-20 fw-400 text-uppercase">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-skins" role="tabpanel" aria-labelledby="pills-contact-tab"
+                        tabindex="0">
+                        <div class="col-md-6 col-lg-4 pt-4">
+                            <div class="card-main">
+                                <img width="100%" src="./assets/images/png/rarity-img5.png" alt="">
+                                <p class="white-color ff-popins fs-20 fw-500 text-uppercase pt-3">Background (Light
+                                    Green)</p>
+                                <div class="d-flex  justify-content-between align-items-center">
+                                    <p class="white-color fs-30 ff-popins fw-600">Rarity:<br><span
+                                            class="text-gradient">11.88%</span></p>
+                                    <button class="btn-3 ff-agnostic fs-20 fw-400 text-uppercase">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-head" role="tabpanel" aria-labelledby="pills-contact-tab"
+                        tabindex="0">
+                        <div class="col-md-6 col-lg-4 pt-4">
+                            <div class="card-main">
+                                <img width="100%" src="./assets/images/png/rarity-img6.png" alt="">
+                                <p class="white-color ff-popins fs-20 fw-500 text-uppercase pt-3">Background (Light
+                                    Green)</p>
+                                <div class="d-flex  justify-content-between align-items-center">
+                                    <p class="white-color fs-30 ff-popins fw-600">Rarity:<br><span
+                                            class="text-gradient">11.88%</span></p>
+                                    <button class="btn-3 ff-agnostic fs-20 fw-400 text-uppercase">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-eyes" role="tabpanel" aria-labelledby="pills-contact-tab"
+                        tabindex="0">
+                        <div class="col-md-6 col-lg-4 pt-4">
+                            <div class="card-main ">
+                                <img width="100%" src="./assets/images/png/rarity-img1.png" alt="">
+                                <p class="white-color ff-popins fs-20 fw-500 text-uppercase pt-3">Background (Light
+                                    Green)
+                                </p>
+                                <div class="d-flex  justify-content-between align-items-center">
+                                    <p class="white-color fs-30 ff-popins fw-600">Rarity:<br><span
+                                            class="text-gradient">11.88%</span></p>
+                                    <button class="btn-3 ff-agnostic fs-20 fw-400 text-uppercase">Buy Now</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- images -->
+            <div class="row">
+                <div class="col-md-6 col-lg-4 pt-4 pt-lg-0">
+                    <div class="card-main">
+                        <img width="100%" src="./assets/images/png/rarity-img1.png" alt="">
+                        <p class="white-color ff-popins fs-20 fw-500 text-uppercase pt-3">Background (Light Green)</p>
+                        <div class="d-flex  justify-content-between align-items-center">
+                            <p class="white-color fs-30 ff-popins fw-600">Rarity:<br><span
+                                    class="text-gradient">11.88%</span></p>
+                            <button class="btn-3 ff-agnostic fs-20 fw-400 text-uppercase">Buy Now</button>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 pt-4 pt-lg-0">
+                    <div class="card-main">
+                        <img width="100%" src="./assets/images/png/rarity-img2.png" alt="">
+                        <p class="white-color ff-popins fs-20 fw-500 text-uppercase pt-3">Background (Light Green)</p>
+                        <div class="d-flex  justify-content-between align-items-center">
+                            <p class="white-color fs-30 ff-popins fw-600">Rarity:<br><span
+                                    class="text-gradient">11.88%</span></p>
+                            <button class="btn-3 ff-agnostic fs-20 fw-400 text-uppercase">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 pt-4 pt-lg-0">
+                    <div class="card-main">
+                        <img width="100%" src="./assets/images/png/rarity-img3.png" alt="">
+                        <p class="white-color ff-popins fs-20 fw-500 text-uppercase pt-3">Background (Light Green)</p>
+                        <div class="d-flex  justify-content-between align-items-center">
+                            <p class="white-color fs-30 ff-popins fw-600">Rarity:<br><span
+                                    class="text-gradient">11.88%</span></p>
+                            <button class="btn-3 ff-agnostic fs-20 fw-400 text-uppercase">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 pt-4">
+                    <div class="card-main">
+                        <img width="100%" src="./assets/images/png/rarity-img4.png" alt="">
+                        <p class="white-color ff-popins fs-20 fw-500 text-uppercase pt-3">Background (Light Green)</p>
+                        <div class="d-flex  justify-content-between align-items-center">
+                            <p class="white-color fs-30 ff-popins fw-600">Rarity:<br><span
+                                    class="text-gradient">11.88%</span></p>
+                            <button class="btn-3 ff-agnostic fs-20 fw-400 text-uppercase">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 pt-4">
+                    <div class="card-main">
+                        <img width="100%" src="./assets/images/png/rarity-img5.png" alt="">
+                        <p class="white-color ff-popins fs-20 fw-500 text-uppercase pt-3">Background (Light Green)</p>
+                        <div class="d-flex  justify-content-between align-items-center">
+                            <p class="white-color fs-30 ff-popins fw-600">Rarity:<br><span
+                                    class="text-gradient">11.88%</span></p>
+                            <button class="btn-3 ff-agnostic fs-20 fw-400 text-uppercase">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 pt-4">
+                    <div class="card-main">
+                        <img width="100%" src="./assets/images/png/rarity-img6.png" alt="">
+                        <p class="white-color ff-popins fs-20 fw-500 text-uppercase pt-3">Background (Light Green)</p>
+                        <div class="d-flex  justify-content-between align-items-center">
+                            <p class="white-color fs-30 ff-popins fw-600">Rarity:<br><span
+                                    class="text-gradient">11.88%</span></p>
+                            <button class="btn-3 ff-agnostic fs-20 fw-400 text-uppercase">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center pt-5">
+                <button class="white-color gradient-color ff-agnostic text-uppercase fw-400 fs-20 btn-4">Explore
+                    More</button>
+            </div>
+        </div>
         </div>
     </section>
+    <!-- footer -->
+    <footer class="bg-black">
+        <!-- syndicate game -->
+        <section class=" py-5">
+            <div class="container">
+                <div class="row justify-content-between align-items-center py-5">
+                    <div class=" col-lg-5">
+                        <h2 class="fs-49 fs-400 ff-agnostic white-color pb-3 ">Syndicate Game</h2>
+                        <p class="fs-29 ff-agnostic fw-400 text-uppercase white-color pb-2">What will the Syndicate game be?
+                        </p>
+                        <p class="white-color ff-popins fs-18 fw-400  text-capitalize pb-3">The syndicate game will be a third person shooter
+                            where 4 factions will battle over lands
+                            that provide income via the Syndicate token for the faction that owns it.</p>
+                    </div>
+                    <div class=" col-lg-6 position-relative">
+                        <div class="footer-card">
+                            <img  class="footer-img" src="./assets/images/png/footer-img.png" alt="">
+                        </div>
+                        <button class="play-btn">
+                            <div class="position-relative">
+                                <div class="circle-play"></div>
+                                <div class="circle-play2"></div>
+                                <div class="circle-play3"></div>
+                                <img class="play-icon" src="./assets/images/svg/play-btn.svg" alt="">
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- last section -->
+        <section class="pt-5 position-relative ">
+            <div class="container">
+                <div class="d-flex justify-content-center">
+                    <img src="./assets/images/png/header-logo.png" alt="">
+                </div>
+                <div class="d-flex justify-content-center py-5">
+                    <img src="./assets/images/svg/icon-x.png" alt="">
+                    <img src="./assets/images/svg/icon-discord.png" alt="">
+                    <img src="./assets/images/svg/icon-boat.png" alt="">
+                </div>
+                <div class="line-foot"></div>
+                <p class="text-center white-color fs-16 fw-400 ff-popins py-3">Copyright©Small Arms Syndicate.com</p>
+            </div>
+            <img class="footer-cartoon1" src="./assets/images/png/cartoon-2.png" alt="">
+            <img class="footer-cartoon2" src="./assets/images/png/cartoon-3.png" alt="">
+        </section>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
     </script>
@@ -157,7 +365,11 @@
     <script>
         function openNav() {
             document.getElementById("Nav").classList.toggle("left_0")
-        }
+            document.body.classList.toggle("overflow_hidden")
+            document.getElementById("menu-line1").classList.toggle("menu-line1")
+            document.getElementById("menu-line2").classList.toggle("menu-line2")
+            document.getElementById("menu-line3").classList.toggle("menu-line3")
+        };
     </script>
 </body>
 
