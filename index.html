@@ -38,13 +38,13 @@
 <!-- Meta Tags Generated with https://metatags.io -->
 </head>
     <!-- preloader -->
-    <div id="Preloader"
+    <!-- <div id="Preloader"
     class=" min-vh-100 position-fixed top-0 start-0 d-flex z-3 bg-black justify-content-center align-items-center w-100">
     <img class="loader-animate" src="./assets/images/png/header-logo.png" alt="">
-  </div>
+  </div> -->
 <!-- preloader -->
-<body class="overflow_hidden">
-    <button onclick="topFunction()" id="myBtn"  title="Go to top">
+<body class="overflow_hidde">
+    <button onclick="topFunction()" class="btn-hover" id="myBtn"  title="Go to top">
         &#8657
     </button>
     <header class="min-h-100 d-flex flex-column">
@@ -52,22 +52,22 @@
             <!-- Nav-Bar -->
             <nav class="container d-flex align-items-center justify-content-between">
                 <img class="py-1 cursor" src="./assets/images/png/header-logo.png" alt="">
-                <ul id="Nav" class="d-flex pt-3 nav-bar z-1 ">
-                    <li><a class="ff-agnostic me-4 white-color fs-18 fw-400 text-uppercase nav-links" href="">BUY A
+                <ul id="Nav" class="d-flex  nav-bar z-1 ">
+                    <li><a onclick="openNav()" class="ff-agnostic me-4 white-color fs-18 fw-400 text-uppercase nav-links" href="#sas">BUY A
                             SAS</a>
                     </li>
-                    <li><a class="ff-agnostic me-4 white-color fs-18 fw-400 text-uppercase nav-links"
+                    <li><a onclick="openNav()" class="ff-agnostic me-4 white-color fs-18 fw-400 text-uppercase nav-links"
                             href="">RoadMap</a>
                     </li>
-                    <li><a class="ff-agnostic me-4 white-color fs-18 fw-400 text-uppercase nav-links" href="">Team</a>
+                    <li><a onclick="openNav()" class="ff-agnostic me-4 white-color fs-18 fw-400 text-uppercase nav-links" href="#team">Team</a>
                     </li>
-                    <li><a class="ff-agnostic me-4 white-color fs-18 fw-400 text-uppercase nav-links" href="">Rarity</a>
+                    <li><a onclick="openNav()" class="ff-agnostic me-4 white-color fs-18 fw-400 text-uppercase nav-links" href="#rarity">Rarity</a>
                     </li>
-                    <li><a class="ff-agnostic me-4 white-color fs-18 fw-400 text-uppercase nav-links" href="">Stash</a>
+                    <li><a onclick="openNav()" class="ff-agnostic me-4 white-color fs-18 fw-400 text-uppercase nav-links" href="#stash">Stash</a>
                     </li>
-                    <li><a class="ff-agnostic me-4 white-color fs-18 fw-400 text-uppercase nav-links " href="">Syndicate
+                    <li><a onclick="openNav()" class="ff-agnostic me-4 white-color fs-18 fw-400 text-uppercase nav-links " href="#syndicate">Syndicate
                             Game</a></li>
-                            <button class="ff-agnostic gradient-color btn-1 white-color fs-20  fw-400 d-lg-none">connect wallet</button>
+                            <button  class="ff-agnostic gradient-color btn-1 white-color fs-20  fw-400 d-lg-none">connect wallet</button>
                 </ul>
                     <button class="ff-agnostic gradient-color btn-1 white-color fs-20 fw-400 d-none d-lg-block btn-hover">connect wallet</button>
 
@@ -98,22 +98,22 @@
         </section>
     </header>
     <!-- section-3 -->
-    <section class="bg-black  py-3  py-lg-5">
+    <section id="sas" class="bg-black  py-5  py-lg-5">
         <div class="container">
-            <div class="row py-3 py-lg-5 my-lg-5 justify-content-between align-items-center">
+            <div class="row py-5 py-lg-5 my-lg-5 justify-content-between align-items-center">
                 <div class="col-lg-5 d-flex justify-content-center" data-aos="zoom-in-up">
                     <img width="100%" class="gifimg" src="./assets/images/png/sec-2gif.gif" alt="">
                 </div>
                 <div class="col-lg-6 pt-2" data-aos="zoom-in-up">
-                    <h2 class="fs-39 white-color ff-agnostic fw-400 text-center text-lg-start">Welcome to <br>
+                    <h2 class="fs-39 white-color ff-agnostic fw-400 text-center text-lg-start">Welcome to <br class="d-block">
                         <span class="text-gradient fs-49 ">Small Arms Syndicate</span></h2>
                     <p class="white-color ff-popins fs-18 fw-400 pe-2 pt-1 pb-3 text-center text-lg-start">Mauris, ipsum auctor at aenean.
                         Ultrices netus
                         enim nulla nisl, metus, leo, donec sed
                         sollicitudin. Nisl, sem dapibus ac urna. Amet suscipit varius ullamcorper fermentum nulla
                         gravida. Pellentesque tortor vel tempus nunc metus. Felis nec suspendisse in odio eget at vel
-                        amet <br> erat. Nisi consequat <br> Nisl, sem dapibus ac urna. Amet suscipit varius ullamcorper
-                        <br> fermentum
+                        amet <br class="br-none"> erat. Nisi consequat <br class="br-none"> Nisl, sem dapibus ac urna. Amet suscipit varius ullamcorper
+                        <br class="br-none"> fermentum
                         nulla gravida.</p>
                     <div class="d-flex justify-content-center justify-content-lg-start ">
                         <button class="gradient-color white-color fs-18  fw-400 ff-agnostic text-uppercase btn-2 btn-hover">Buy
@@ -124,7 +124,7 @@
         </div>
     </section>
      <!-- Section_Roadmap -->
-     <section class="bg-black py-5 position-relative ">
+     <section id="roadmap" class="bg-black py-5 position-relative ">
         <!-- <div class="circle-1"> -->
         </div>
         <!-- <div class="circle1-inner"></div> -->
@@ -251,7 +251,7 @@
 
                 </div>
                 <div data-aos="zoom-in-up" class="col-12 col-xl-4 d-flex align-items-center justify-content-center justify-content-xl-start">
-                    <img class="ww_100" src="./assets/images/png/roaddrngnimg.png" alt="#">
+                    <img class="roadmap-img" src="./assets/images/png/roaddrngnimg.png" alt="#">
 
                 </div>
 
@@ -260,13 +260,13 @@
         </div>
     </section>
      <!-- Section_Team -->
-     <section class="teamsectionbgimg bg-black">
+     <section id="team" class="teamsectionbgimg bg-black">
         <div class="container py-5">
-            <div data-aos="zoom-in-up" class="d-flex text-center justify-content-center pt_98">
+            <div data-aos="zoom-in-up" class="d-flex text-center justify-content-center py-3 py-lg-5">
                 <h2 class="fs-49 text-white fw-400 ff-agnostic text-capitalize ">Team</h2>
             </div>
 
-            <div class="row  py-5 slick_slider">
+            <div class="row  py-lg-5 slick_slider">
                 <div data-aos="zoom-in-up" class="col-4 cursor">
                     <div class="position-relative d-flex justify-content-center team-card">
                         <img class="imgcard w-100" src="./assets/images/png/drgnimg1.png" alt="#">
@@ -308,13 +308,13 @@
 
     </section> 
     <!-- section Rarity -->
-    <section class="bg-black position-relative">
+    <section id="rarity" class="bg-black position-relative py-4">
         <!-- <div class="circle-rarity"></div> -->
         <div class="container">
             <h2 data-aos="zoom-in-up" class="white-color fs-49 ff-agnostic fw-400 text-uppercase text-center">Rarity</h2>
             <!-- nav-tabs -->
-            <div class="py-5 d-flex flex-column justify-content-center multi-carousel ">
-                <ul data-aos="zoom-in-up" class="nav nav-pills mb-3  d-flex align-items-center justify-content-center gap-3"
+            <div class="py-3 py-lg-5 d-flex flex-column justify-content-center ">
+                <ul data-aos="zoom-in-up" class="nav nav-pills mb-3 pb-3 pb-lg-0  overflow-x-scroll scroll-btn flex-nowrap d-flex align-items-center justify-content-start justify-content-lg-center gap-3"
                     id="pills-tab" role="tablist">
                     <li class="nav-item " role="presentation">
                         <button class="nav-link active d-inline-block" id="pills-home-tab" data-bs-toggle="pill"
@@ -458,7 +458,7 @@
                     <div class="card-main">
                         <img width="100%" src="./assets/images/png/rarity-img1.png" alt="">
                         <p class="white-color ff-popins fs-20 fw-500 text-uppercase pt-3">Background (Light Green)</p>
-                        <div class="d-flex  justify-content-between align-items-center">
+                        <div class="d-flex pt-3 pt-lg-0  justify-content-between align-items-center">
                             <p class="white-color fs-30 ff-popins fw-600">Rarity:<br><span
                                     class="text-gradient">11.88%</span></p>
                             <button class="btn-3 ff-agnostic fs-20 fw-400 text-uppercase btn-hover">Buy Now</button>
@@ -471,7 +471,7 @@
                     <div class="card-main">
                         <img width="100%" src="./assets/images/png/rarity-img2.png" alt="">
                         <p class="white-color ff-popins fs-20 fw-500 text-uppercase pt-3">Background (Light Green)</p>
-                        <div class="d-flex  justify-content-between align-items-center">
+                        <div class="d-flex pt-3 pt-lg-0  justify-content-between align-items-center">
                             <p class="white-color fs-30 ff-popins fw-600">Rarity:<br><span
                                     class="text-gradient">11.88%</span></p>
                             <button class="btn-3 ff-agnostic fs-20 fw-400 text-uppercase btn-hover">Buy Now</button>
@@ -482,7 +482,7 @@
                     <div class="card-main">
                         <img width="100%" src="./assets/images/png/rarity-img3.png" alt="">
                         <p class="white-color ff-popins fs-20 fw-500 text-uppercase pt-3">Background (Light Green)</p>
-                        <div class="d-flex  justify-content-between align-items-center">
+                        <div class="d-flex pt-3 pt-lg-0  justify-content-between align-items-center">
                             <p class="white-color fs-30 ff-popins fw-600">Rarity:<br><span
                                     class="text-gradient">11.88%</span></p>
                             <button class="btn-3 ff-agnostic fs-20 fw-400 text-uppercase btn-hover">Buy Now</button>
@@ -493,7 +493,7 @@
                     <div class="card-main">
                         <img width="100%" src="./assets/images/png/rarity-img4.png" alt="">
                         <p class="white-color ff-popins fs-20 fw-500 text-uppercase pt-3">Background (Light Green)</p>
-                        <div class="d-flex  justify-content-between align-items-center">
+                        <div class="d-flex pt-3 pt-lg-0  justify-content-between align-items-center">
                             <p class="white-color fs-30 ff-popins fw-600">Rarity:<br><span
                                     class="text-gradient">11.88%</span></p>
                             <button class="btn-3 ff-agnostic fs-20 fw-400 text-uppercase btn-hover">Buy Now</button>
@@ -504,7 +504,7 @@
                     <div class="card-main">
                         <img width="100%" src="./assets/images/png/rarity-img5.png" alt="">
                         <p class="white-color ff-popins fs-20 fw-500 text-uppercase pt-3">Background (Light Green)</p>
-                        <div class="d-flex  justify-content-between align-items-center">
+                        <div class="d-flex pt-3 pt-lg-0  justify-content-between align-items-center">
                             <p class="white-color fs-30 ff-popins fw-600">Rarity:<br><span
                                     class="text-gradient">11.88%</span></p>
                             <button class="btn-3 ff-agnostic fs-20 fw-400 text-uppercase btn-hover">Buy Now</button>
@@ -515,7 +515,7 @@
                     <div class="card-main">
                         <img width="100%" src="./assets/images/png/rarity-img6.png" alt="">
                         <p class="white-color ff-popins fs-20 fw-500 text-uppercase pt-3">Background (Light Green)</p>
-                        <div class="d-flex  justify-content-between align-items-center">
+                        <div class="d-flex  pt-3 pt-lg-0 justify-content-between align-items-center">
                             <p class="white-color fs-30 ff-popins fw-600">Rarity:<br><span
                                     class="text-gradient">11.88%</span></p>
                             <button class="btn-3 ff-agnostic fs-20 fw-400 text-uppercase btn-hover">Buy Now</button>
@@ -531,7 +531,7 @@
         </div>
     </section>
       <!-- Section_Royalty Stash -->
-      <section class="stashsectionbgimg mt_200 pb_70">
+      <section id="stash" class="stashsectionbgimg mt_200 pb_70">
         <div class="container">
             <div>
                
@@ -542,12 +542,11 @@
 
             <div class=" pt_30  container stashborder position-relative">
                 <div data-aos="zoom-in-up" class="d-flex flex-column align-items-center justify-content-center text-center pb-lg-5  ">
-                    <p class="fs-25 fw-400 ff-popins line_ht text-white ">We charge a 8% royalty fee for every
-                        Small
-                        Arms Syndicate NFT that sells on the <br> market. 2% of that fee is stashed in a
+                    <p class="fs-25 fw-400 ff-popins line_ht text-white royalty-para">We charge a 8% royalty fee for every  Small
+                        Arms Syndicate NFT that sells on the market. 2% of that fee is stashed in a
                         verifiable
                         wallet
-                        that will be distributed back <br> to SAS holders when the wallet hits 100k Zoo
+                        that will be distributed back to SAS holders when the wallet hits 100k Zoo
                         stashed.</p>
                         <h2 class="fs-49 fw-400 text-capitalize ff-agnostic stash pt-1 pb-lg-5 mb-lg-5">Stashed Amount : 16K</h2>
                     </div>
@@ -564,13 +563,13 @@
 
                     </div>
                 
-                <img data-aos="zoom-in-up" class="closepeti " src="./assets/images/png/closepeti.png" alt="#">
-                <img data-aos="zoom-in-up" class="openpeti " src="./assets/images/png/openpeti.png" alt="#">
+                <img data-aos="zoom-in-up" class="closepeti d-none d-lg-block " src="./assets/images/png/closepeti.png" alt="#">
+                <img data-aos="zoom-in-up" class="openpeti d-none d-lg-block " src="./assets/images/png/openpeti.png" alt="#">
             </div>
         </div>
     </section>
     <!-- footer -->
-    <footer class="bg-black">
+    <footer id="syndicate" class="bg-black">
         <!-- syndicate game -->
         <section class=" py-5">
             <div class="container">
@@ -614,7 +613,7 @@
                 <p class="text-center white-color fs-16 fw-400 ff-popins py-3">Copyright©Small Arms Syndicate.com</p>
             </div>
             <img data-aos="zoom-in-up" class="footer-cartoon1" src="./assets/images/png/cartoon-2.png" alt="">
-            <img data-aos="zoom-in-up" class="footer-cartoon2" src="./assets/images/png/cartoon-3.png" alt="">
+            <img data-aos="zoom-in-up" class="footer-cartoon2 d-none d-lg-block" src="./assets/images/png/cartoon-3.png" alt="">
         </section>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
@@ -705,6 +704,7 @@
     <script>
         AOS.init({
             duration: 700,
+            once:true,
         });
          // Get the button:
          let mybutton = document.getElementById("myBtn");

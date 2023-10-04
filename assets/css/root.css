@@ -22,10 +22,10 @@
     --fs-22: 12px;
     --fs-25: 16px;
     --fs-28: 28px;
-    --fs-30: 30px;
+    --fs-30: 20px;
     --fs-35: 22px;
     --fs-39: 20px;
-    --fs-49: 24px;
+    --fs-49: 28px;
     --fs-70: 46px;
 
     --fw-300: 300;
@@ -138,7 +138,7 @@
 
 .py-7 {
     padding-top: 0rem;
-    padding-bottom: 5rem;
+    padding-bottom: 8rem;
 }
 
 @media (min-width:576px) {
@@ -177,8 +177,8 @@
         width: 92%;
     }
     .py-7 {
-        padding-top: 0rem;
-        padding-bottom: 9rem;
+        padding-top: 8rem;
+        padding-bottom: 14rem;
     }
 
 }
@@ -195,16 +195,12 @@
         --fs-30: 30px;
         --fs-35: 35px;
         --fs-39: 39px;
-        --fs-49: 49px;
+        --fs-49: 30px;
         --fs-70: 92px;
     }
     .w-82{
         width: 95%;
     }
-}
-
-@media (min-width:1024px) {
-    
 }
 
 @media (min-width:1200px) {
@@ -219,13 +215,14 @@
         --fs-30: 30px;
         --fs-35: 35px;
         --fs-39: 39px;
-        --fs-49: 49px;
+        --fs-49: 42px;
         --fs-70: 70px;
     }
 
     .w-82 {
         width: 82%;
     }
+   
 }
 
 @media (min-width:1400px) {
@@ -233,7 +230,12 @@
         width: 72%;
     }
     .py-7 {
-        padding-top: 9rem;
+        padding-top: 5rem;
         padding-bottom: 15rem;
+    }
+}
+@media (min-width:1600px) {
+   .py-7{
+      padding-top: 14rem;
     }
 }
